@@ -188,3 +188,80 @@ All files in the `build/` directory are generated on-demand from templates and s
 5. **Environment Clarity**: Each deployment target has its own committed file
 6. **Direct Editing**: Developers can modify .env files without complex scripts
 
+## 📚 Documentation Structure
+
+The `docs/` folder contains comprehensive documentation for the toolkit:
+
+### Core Documentation
+
+```text
+docs/
+├── Project_Setup.md                    # Initial project setup and configuration guide
+├── Project_Structure.md                # This file - repository structure and organization
+├── Validation.md                       # Workload validation and attestation process
+├── VendorAttestationTemplate.md        # Template for vendor self-attestation
+├── RibbonControls_Architecture.md      # Ribbon controls system architecture
+├── RibbonControls_Implementation.md    # How to implement ribbon controls
+├── RibbonControls_QuickReference.md    # Quick reference for ribbon controls
+└── HelloWorldItem/                     # HelloWorld item documentation
+    ├── Architecture.md                 # HelloWorld item architecture
+    ├── Readme.md                       # HelloWorld item overview
+    └── media/                          # Screenshots and diagrams
+```
+
+### Documentation Categories
+
+#### Setup and Structure
+- **Project_Setup.md**: Step-by-step guide to setting up a new workload project
+- **Project_Structure.md**: Understanding the repository organization and workflows
+
+#### Validation and Publishing
+- **Validation.md**: Comprehensive guide to workload validation requirements
+  - Pre-attestation validation checklist
+  - Security, privacy, and compliance testing
+  - Performance and accessibility validation
+  - Supporting documentation requirements
+- **VendorAttestationTemplate.md**: Official template for vendor attestation
+  - Section I: ISV/Vendor information
+  - Section II: Formal attestation declaration
+  - Section III: Detailed requirements checklist (must be hosted on vendor website)
+
+#### Controls and Components
+- **RibbonControls_Architecture.md**: Deep dive into ribbon system design
+- **RibbonControls_Implementation.md**: Step-by-step implementation guide
+- **RibbonControls_QuickReference.md**: Quick lookup for ribbon patterns
+
+#### Item-Specific Documentation
+- **HelloWorldItem/**: Reference implementation documentation
+  - Architecture and design decisions
+  - Implementation examples and patterns
+  - Visual guides and screenshots
+
+### Documentation Best Practices
+
+1. **Keep Documentation Updated**: Update docs when making significant changes
+2. **Reference Microsoft Docs**: Link to official Microsoft Fabric documentation
+3. **Include Examples**: Provide code samples and visual examples
+4. **Version Documentation**: Update version numbers and dates when making changes
+5. **Cross-Reference**: Link between related documentation files
+
+### Adding New Documentation
+
+When adding new features or items:
+
+1. **Create Item Documentation**: Add a folder under `docs/[ItemName]/`
+2. **Update References**: Link new docs from this file and other relevant docs
+3. **Include Architecture**: Document design decisions and patterns
+4. **Add Examples**: Provide implementation examples and code samples
+5. **Update Validation**: If adding requirements, update Validation.md
+
+### Documentation for Publishing
+
+Before publishing your workload:
+
+1. **Review Validation.md**: Ensure all validation requirements are met
+2. **Complete VendorAttestationTemplate.md**: Fill out all sections
+3. **Host Section III**: Publish detailed attestation on your vendor website
+4. **Submit to Microsoft**: Provide completed attestation to Microsoft
+5. **Maintain Updates**: Version and update attestation with each release
+
