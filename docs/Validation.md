@@ -202,7 +202,7 @@ Ensure you have the following documentation ready for attestation:
 
 ### Toolkit Documentation
 
-- [Vendor Attestation Template](./VendorAttestationTemplate.md)
+- [Vendor Attestation Template](./validation/VendorAttestationTemplate.md)
 - [Project Structure](./Project_Structure.md)
 - [Project Setup](./Project_Setup.md)
 
