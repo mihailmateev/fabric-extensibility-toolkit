@@ -72,8 +72,8 @@ export async function initialize(params: InitParams) {
                 console.log(`Get item settings action received with data:`, data);
                 console.log("####################################################");
 
-                const { item: { objectId } } = data as ItemSettingContext;
-                const itemTypeName = createdItem.itemType.substring(createdItem.itemType.lastIndexOf('.') + 1);
+                const { item } = data as ItemSettingContext;
+                const itemTypeName = item.itemType.substring(item.itemType.lastIndexOf('.') + 1);
 
                 return [
                     {
@@ -81,7 +81,7 @@ export async function initialize(params: InitParams) {
                         displayName: t('Item_About_Label'),
                         workloadSettingLocation: {
                             workloadName: sampleWorkloadName,
-                            route: `/${itemTypeName}Item-about-page/${objectId}`,
+                            route: `/${itemTypeName}Item-about-page/${item.objectId}`,
                         },
                         workloadIframeHeight: '1000px'
                     },
@@ -93,7 +93,7 @@ export async function initialize(params: InitParams) {
                         },
                         workloadSettingLocation: {
                             workloadName: sampleWorkloadName,
-                            route: `/${itemTypeName}Item-settings-page/${objectId}`,
+                            route: `/${itemTypeName}Item-settings-page/${item.objectId}`,
                         },
                         workloadIframeHeight: '1000px'
                     }
